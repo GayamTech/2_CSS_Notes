@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. 
+We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- Grid of Boxes / Equal Width Boxes-->
+<!-- -->
+<!-- -->
+<!-- With the float property, it is easy to float boxes of content side by side:
+
+-->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- 
+
+What is box-sizing?
+
+You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- 
+
+Property			Description
+
+box-sizing		Defines how the width and height of an element are 
+			calculated: should they include padding and borders, or not
+
+clear			Specifies what should happen with the element that is next to 
+			a floating element
+
+float			Specifies whether an element should float to the left, right, 
+			or not at all
+overflow			Specifies what happens if content overflows an element's box
+
+overflow-x		Specifies what to do with the left/right edges of the content 
+			if it overflows the element's content area
+
+overflow-y		Specifies what to do with the top/bottom edges of the content 
+			if it overflows the element's content area
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

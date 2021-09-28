@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+</style>
+</head>
+<body>
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- -->
+<!-- CSS Pseudo-elements
+-->
+<!-- -->
+<!-- -->
+<!-- What are Pseudo-Elements?-->
+<!-- -->
+<!-- -->
+<!--A CSS pseudo-element is used to style specified parts of an element. --> 
+<!-- -->
+<!-- -->
+<!-- 
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+
+-->
+<!-- --> 
+<!-- Syntax
+
+The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+}
+
+
+-->
+<!-- -->
+<!-- --> 
+<!--The ::first-line Pseudo-element -->
+<!-- -->
+<!-- -->
+<!--The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+ --> 
+<!-- -->
+<!-- The following example formats the first line of the text in all <p> elements:-->
+<!-- -->
+<!-- --> 
+<!--Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+ -->
+<!-- -->
+<!-- -->
+<!-- 
+
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+
+--> 
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- Notice the double colon notation - ::first-line versus :first-line--> 
+<!-- -->
+<!--The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+ -->
+<!-- -->
+<!-- -->
+<!-- The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.-->
+<!-- --> 
+<!-- -->
+<!-- For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.-->
+<!-- --> 
+<!-- -->
+<!-- -->
+<!-- 
+
+Selector		Example		Example description
+
+::after		p::after		Insert content after every <p> element
+
+::before		p::before	Insert content before every <p> element
+
+::first-letter	p::first-letter	Selects the first letter of every <p> element
+
+::first-line	p::first-line	Selects the first line of every <p> element
+
+::selection	p::selection	Selects the portion of an element that is selected by 
+				a user
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

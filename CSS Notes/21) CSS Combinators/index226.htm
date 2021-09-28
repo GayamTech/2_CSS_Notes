@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div + p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div>
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- Adjacent Sibling Selector (+)-->
+<!-- -->
+<!-- The adjacent sibling selector is used to select an element that is directly after another specific element.-->
+<!-- -->
+<!-- -->
+<!-- Sibling elements must have the same parent element, and "adjacent" means "immediately following".--> 
+<!-- -->
+<!-- The following example selects the first <p> element that are placed immediately after <div> elements:-->
+<!-- -->
+<!-- -->
+<!-- 
+
+Selector			Example		Example description
+
+element element		div p		Selects all <p> elements inside <div> 
+					elements
+
+element>element		div > p		Selects all <p> elements where the parent is 
+					a <div> element
+
+element+element		div + p		Selects the first <p> element that are 			
+					placed immediately after <div> elements
+
+element1~element2	p ~ ul		Selects every <ul> element that are preceded 
+					by a <p> element
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 

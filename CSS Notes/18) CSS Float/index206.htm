@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="img_5terre.jpg" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!--The grid of boxes can also be used to display images side by side: --> 
+<!-- -->
+<!-- -->
+<!-- 
+
+Property			Description
+
+box-sizing		Defines how the width and height of an element are 
+			calculated: should they include padding and borders, or not
+
+clear			Specifies what should happen with the element that is next to 
+			a floating element
+
+float			Specifies whether an element should float to the left, right, 
+			or not at all
+overflow			Specifies what happens if content overflows an element's box
+
+overflow-x		Specifies what to do with the left/right edges of the content 
+			if it overflows the element's content area
+
+overflow-y		Specifies what to do with the top/bottom edges of the content 
+			if it overflows the element's content area
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
