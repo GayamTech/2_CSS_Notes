@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.intro {background-color: yellow;}
+h1 {background-color: red;}
+</style>
+</head>
+<body>
+
+<h1 class="intro">This is a heading</h1>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- -->
+<!-- -->
+<!-- 
+
+CSS Specificity
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!-- 
+
+Contextual selectors are more specific than a single element selector - The embedded style sheet is closer to the element to be styled. So in the following situation
+
+
+
+From external CSS file:
+#content h1 {background-color: red;}
+
+In HTML file:
+<style>
+#content h1 {
+  background-color: yellow;
+}
+</style>
+
+
+the latter rule will be applied.
+
+
+
+
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!--
+
+A class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc:
+
+ -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
+<!--
+
+The universal selector and inherited values have a specificity of 0 - *, body * and similar have a zero specificity. Inherited values also have a specificity of 0. 
+
+-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- --> 
